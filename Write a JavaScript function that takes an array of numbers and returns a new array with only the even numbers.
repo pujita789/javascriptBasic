@@ -10,3 +10,9 @@ return evenNumArray;
 console.log(evenArr([3,4,5,6,8,9]))
 
 ```
+
+//using filter method
+function even(arr){
+return arr.filter((ar)=>ar%2===0)
+}
+console.log(even([3,4,5,7]))
