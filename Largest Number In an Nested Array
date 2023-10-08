@@ -1,0 +1,12 @@
+function nestedArray(arr){
+let flatArr=arr.flat(); //for easy execution flattening the array
+let max=flatArr[0]; //initializing the array
+for(let i=0; i<flatArr.length;i++){
+if(max<flatArr[i]){
+max=flatArr[i]  //storing the max number in the new array
+}
+}
+return max;
+}
+let anArr = [1,2,3,4,[5],[6,7]]
+console.log(nestedArray(anArr))
