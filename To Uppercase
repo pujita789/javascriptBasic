@@ -1,0 +1,7 @@
+function firstLetter(str){
+
+return str.charAt(0).toUpperCase()+str.slice(1)
+
+}
+let strring = "name , pujita"
+console.log(firstLetter(strring))
