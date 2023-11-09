@@ -10,3 +10,18 @@ return max;
 }
 let anArr = [1,2,3,4,[5],[6,7]]
 console.log(nestedArray(anArr))
+//
+function nestedArr(arr){
+let largest = arr[0][0];
+for(let i = 0; i < arr.length ; i++){
+ for(let j = 0 ; j < arr[i].length ;j++){
+ if(arr[i][j]>largest){
+ largest = arr[i][j]
+ }
+ }
+}
+return largest
+}
+const a = [[2,3],[3,5],[7,9]];
+console.log(nestedArr(a)) 
+
